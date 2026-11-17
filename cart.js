@@ -1,0 +1,8 @@
+// Simple shopping-cart total helper.
+export function cartTotal(items) {
+  let total = 0;
+  for (const item of items) {
+    total += item.price * item.quantity;
+  }
+  return total;
+}
